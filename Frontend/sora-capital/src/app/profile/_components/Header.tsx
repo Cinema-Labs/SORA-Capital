@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Header() {
     return (
-        <div className="flex flex-row h-[12vh] w-full items-center bg-[#1B1B1B] border border-r-0 border-b-2 border-l-0 border-t-0 border-[#3B3D41]">
+        <div className="flex flex-row h-[12vh] w-full items-center bg-[#1B1B1B] border border-r-0 border-b-2 border-l-0 border-t-0 border-[#3B3D41] justify-center">
               <Image
               src="/soraIcon.png"
               alt="Sora Logo"

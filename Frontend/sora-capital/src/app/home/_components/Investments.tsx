@@ -1,6 +1,6 @@
 export default function Investments() {
     return(
-        <div className="flex flex-col justify-left px-5 py-5 bg-[#0A0B0D] text-white m-10 rounded-3xl">
+        <div className="flex flex-col justify-left px-5 py-5 bg-[#0A0B0D] text-white m-10 mt-5 rounded-3xl">
         <div className="text-[#D9EBFF] text-xl ml-5">
             Total invested
         </div>
