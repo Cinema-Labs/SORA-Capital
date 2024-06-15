@@ -5,7 +5,7 @@ import { Chart as chartjs, registerables } from 'chart.js/auto';
 
 chartjs.register(...registerables);
 
-export default function PortfolioPerformance() {
+export default function FundPerformance() {
     const Value = {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
         datasets: [
@@ -46,6 +46,7 @@ export default function PortfolioPerformance() {
                 ticks: {
                     color: 'rgba(217,235,255)',
                     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    display:false,
                     
                 },
                 grid: {
@@ -57,12 +58,11 @@ export default function PortfolioPerformance() {
 
     return (
         <div>
-            <div className="text-2xl ml-20 text-[#D9EBFF] font-bold">Portfolio Performance</div>
-            <div className='flex flex-center w-[78vw] h-[40vh] mt-4 rounded-xl mx-auto bg-[#0A0B0D] justify-center items-center border border-[1px] border-[#3B3D41]'>
+            <div className='flex flex-center w-[15vw] mt-4 rounded-xl mx-auto justify-center items-center'>
                 <Line  
                     data={Value}
                     options={PortfolioPerformanceOptions}
-                    className='ml-3 mb-10' 
+                    className='' 
                 />
             </div>
         </div>

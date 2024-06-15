@@ -11,7 +11,7 @@ export default function Header() {
               height={60}
               priority
             />
-            <div className="text-xl ml-5 font-light text-[#969696]">
+            <div className="text-xl ml-2 font-light text-[#969696]">
                 Kowalski
             </div>
             <button className="bg-[#578BFA] text-[#1B1B1B] rounded-full py-2 px-12 ml-12 font-bold hover:bg-[#507FE5]">
@@ -20,9 +20,6 @@ export default function Header() {
             <button className="bg-[#32353D] text-[#D9EBFF] rounded-full py-2 px-12 ml-2 font-bold hover:bg-[#3A3D45]">
                 Buy/Sell
             </button>
-            <div className="font-bold text-md ml-[40vw]">
-                Home
-            </div>
         </div>
     )
 }

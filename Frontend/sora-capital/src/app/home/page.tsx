@@ -1,5 +1,5 @@
 import NavBar from "./_components/NavBar";
-import Header from "./_components/Header";
+import Header from "../components/Header";
 import Investments from "./_components/Investments";
 import PortfolioPerformance from "./_components/PortfolioPerformance";
 
