@@ -6,8 +6,8 @@ export default function Page() {
     const navigate = useNavigate();
 
     return (
-        <>
+        <div className="flex flex-col">
         <Home />
-        </>
+        </div>
     );
 }
