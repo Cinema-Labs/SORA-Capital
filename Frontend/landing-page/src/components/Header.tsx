@@ -66,7 +66,7 @@ export default function Header() {
                             </button>
                         </li>
                         <li>
-                            <button className="hover:text-gray-300 border border-2px border-[#0A0B0D] px-5 py-2 text-center justify-center items-center mr-10"
+                            <button className="border border-2px border-[#0A0B0D] px-5 py-2 text-center justify-center items-center mr-10 hover:bg-[#F8F8F8] hover:bg-opacity-5"
                                 // Navigate to the About page when the button is clicked
                                 onClick={() => navigate('/pdb')}
                             >
