@@ -57,14 +57,12 @@ export default function FundPerformance() {
     };
 
     return (
-        <div>
-            <div className='flex flex-center w-[15vw] mt-4 rounded-xl mx-auto justify-center items-center'>
+        <div className='w-full'>
                 <Line  
-                    data={Value}
+                    data={Value as any}
                     options={PortfolioPerformanceOptions}
                     className='' 
                 />
-            </div>
         </div>
     )
 }

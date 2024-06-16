@@ -1,3 +1,5 @@
+"use client"
+
 import NavBar from "./_components/NavBar";
 import Header from "../components/Header";
 import Investments from "./_components/Investments";
