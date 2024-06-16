@@ -1,7 +1,15 @@
+"use client"
+
 import NavBar from "./_components/NavBar"
 import Header from "../components/Header";
 import MarketCard from "./_components/MarketCard";
+import useAuth from "@/hooks/useAuth";
+
 export default function Home() {
+  const {user} = useAuth();
+
+  console.log(user);
+
   return (
     <main className="flex min-h-screen flex-row justify-center">
       <NavBar />
