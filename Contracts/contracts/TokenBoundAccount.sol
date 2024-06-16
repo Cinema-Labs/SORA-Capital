@@ -73,6 +73,16 @@ contract TokenBoundAccount is IERC165, IERC1271, IERC6551Account {
         return "";
     } // sign
 
+    function approveTransfer(address newOwner) external {
+        require(msg.sender == owner(), "Not token owner");
+
+        (uint256 chainId, address tokenContract, uint256 tokenId) = this
+            .token();
+
+        // Approve the new owner to transfer the token
+        IERC721(tokenContract).approve(newOwner, tokenId);
+    }
+
     function transferOwnership(address newOwner) external {
         require(msg.sender == owner(), "Not token owner");
         require(newOwner != address(0), "New owner is the zero address");

@@ -8,7 +8,7 @@ async function main() {
     process.env.ALCHEMY_SEPOLIA_API_KEY
   );
   const signer = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
-  const tokenBoundAccount = "0xc7Bcf9ABBbCC488Edc36bE46180a362Fe9D18613";
+  const tokenBoundAccount = "0x9bd9C036aF54024Bb03802c236256491dA52Dac1";
   const tba = new ethers.Contract(tokenBoundAccount, artifact.abi, signer);
 
   // const tx =  await tba.();

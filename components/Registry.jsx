@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import ERC6551Registry from "../artifacts/contracts/ERC6551Registry.sol/ERC6551Registry.json";
 
-const registryContractAddress = "0x3A92A23Fa9e933D3EB09eBFd63D33228aFfD0971";
+const registryContractAddress = "0x3B15D7b6db923b39E4039C002A98703F246fd81c";
 
 const provider = new ethers.BrowserProvider(window.ethereum);
 
@@ -26,9 +26,9 @@ function CreateAccount() {
     }
 
     try {
-      const implementation = "0x3B2330101212e5Ff54338f92B49C3b430CAE81d2";
+      const implementation = "0x810980fEC40F750F4526bf4A347cF0D742Dc88D2";
       const chainId = 11155111;
-      const tokenContract = "0x41C03e28443131668545dbC1c0b9A48002d58586";
+      const tokenContract = "0x38C3D508C806FE3Be3a0D9A830893B486C31b49d";
       const currentTokenId = tokenId;
       const currentSalt = salt;
       const initData = "0x";
